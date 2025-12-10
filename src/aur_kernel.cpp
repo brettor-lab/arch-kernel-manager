@@ -33,9 +33,9 @@ namespace fs = std::filesystem;
 namespace {
 
 void prepare_build_environment(const std::string_view& package_name) noexcept {
-    static const fs::path app_path       = utils::fix_path("~/.cache/cachyos-km");
-    static const fs::path pkgbuilds_path = utils::fix_path("~/.cache/cachyos-km/aur_pkgbuilds");
-    static const fs::path package_path   = utils::fix_path(fmt::format("~/.cache/cachyos-km/aur_pkgbuilds/{}", package_name));
+    static const fs::path app_path       = utils::fix_path("~/.cache/arch-kernel-manager");
+    static const fs::path pkgbuilds_path = utils::fix_path("~/.cache/arch-kernel-manager/aur_pkgbuilds");
+    static const fs::path package_path   = utils::fix_path(fmt::format("~/.cache/arch-kernel-manager/aur_pkgbuilds/{}", package_name));
     if (!fs::exists(app_path)) {
         fs::create_directories(app_path);
     }

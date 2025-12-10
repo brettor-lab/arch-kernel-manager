@@ -142,9 +142,14 @@ std::string fix_path(std::string&& path) noexcept {
     return std::move(path);
 }
 
+/* github repository path*/
+//static std::string get_github_clone_path_command() {
+//    return "git clone https://github.com/brettor-lab/linux-cachyos.git pkgbuilds";
+//}
+
 void prepare_build_environment() noexcept {
-    static const fs::path app_path       = utils::fix_path("~/.cache/cachyos-km");
-    static const fs::path pkgbuilds_path = utils::fix_path("~/.cache/cachyos-km/pkgbuilds");
+    static const fs::path app_path       = utils::fix_path("~/.cache/arch-kernel-manager");
+    static const fs::path pkgbuilds_path = utils::fix_path("~/.cache/arch-kernel-manager/pkgbuilds");
     if (!fs::exists(app_path)) {
         fs::create_directories(app_path);
     }
@@ -158,7 +163,8 @@ void prepare_build_environment() noexcept {
 
     std::int32_t cmd_status{};
     if (!fs::exists(pkgbuilds_path)) {
-        cmd_status = std::system("git clone https://github.com/cachyos/linux-cachyos.git pkgbuilds");
+        //@todo: git variable 
+        cmd_status = std::system("git clone https://github.com/brettor-lab/linux-cachyos.git pkgbuilds");
     }
 
     fs::current_path(pkgbuilds_path);

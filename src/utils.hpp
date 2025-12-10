@@ -59,6 +59,7 @@ int runCmdTerminal(QString cmd, bool escalate) noexcept;
 
 void prepare_build_environment() noexcept;
 void restore_clean_environment(std::vector<std::string>& previously_set_options, std::string_view all_set_values) noexcept;
+//static std::string get_github_clone_path_command();
 
 }  // namespace utils
 

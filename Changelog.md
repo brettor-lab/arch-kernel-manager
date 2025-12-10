@@ -2,9 +2,9 @@
 
 ### v0.9.1 (2022-01-27)
 
-[Full Changelog](https://github.com/cachyos/kernel-manager/compare/v0.9.0...v0.9.1)
+[Full Changelog](https://github.com/brettor-lab/kernel-manager/compare/v0.9.0...v0.9.1)
 
-- 🗒️  Add more information about cachyos-km
+- 🗒️  Add more information about arch-kernel-manager
 - 🐛 Fix theming
 - ⚡ Make it work without root privileges
 - Add logo, desktop file
@@ -15,7 +15,7 @@
 
 ### v0.9.0 (2022-01-23)
 
-[Full Changelog](https://github.com/cachyos/kernel-manager/compare/f897e30d69055a7ba3d97e461e3b062a7577df86...v0.9.0)
+[Full Changelog](https://github.com/brettor-lab/kernel-manager/compare/f897e30d69055a7ba3d97e461e3b062a7577df86...v0.9.0)
 
 🔥 It contains a few new features and various bug fixes.
 
